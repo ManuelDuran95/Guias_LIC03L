@@ -1,0 +1,92 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  margin: 0;
+  margin-bottom: 40px;
+   background-color: #3E9BAF;
+}
+
+footer {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  color: white;
+  text-align: center;
+  align-content: center;
+}
+header{
+	font-size: 24px;
+	align-content: center;
+	text-align: center;
+	height: 30px;
+  height: fit-content;
+
+}
+div{
+  display: block;
+  height: fit-content;
+}
+
+.cuadro{
+  display: inline-block;
+  margin-left: 40px;
+}
+.contenedor{
+  display: block;
+  height: 1300px;
+}
+.uno{
+  display: block;
+
+}
+.titulo{
+  display: block;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.conte{
+  text-align: justify;
+  margin: 60px;
+  font-size: 18px;
+}
+.imge{
+  align-items: center;
+  text-align: center;
+}
+.dos{
+  margin-left: 60px;
+display: block;
+height: 500px;
+font-size: 18px;
+}
+.tres{
+  display: block;
+  height: 2500px;
+}
+.rutas{
+  width: 30%;
+  display: inline-block;
+}
+.rut{
+  display: block;
+  height: 500px;
+  width: 100%;
+
+}
+.cul-rut{
+  width: 100%;
+  display: block;
+  height: 400px;
+}
+
+.tresg{
+  width: 100%;
+  display: block;
+  height: 900px;
+}
