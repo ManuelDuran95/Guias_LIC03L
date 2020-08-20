@@ -1,0 +1,13 @@
+.titulo{
+	text-align: center;
+}
+p{
+	text-align: justify;
+}
+.container{
+	align-items: center;
+	text-align: center;
+}
+body{
+	background-color: #000000;
+}
