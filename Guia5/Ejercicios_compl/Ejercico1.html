@@ -1,0 +1,102 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/estilo.css">
+<title>Ejercicio 1_Complementario</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+</head>
+<body>
+  <div class="container">
+      <h2>Ejemplo de javascript no intrusivo</h2>
+
+  </div>
+  <div class="container">
+      <p>Ingrese dos numeros, respectivamente</p>
+  <input type="text" id="txtNumber1" placeholder="num1" /> &nbsp;
+  <input type="text" id="txtNumber2" placeholder="num2" /> <br /><br />
+  <input type="button" value="Sumar" add /> &nbsp;
+  <input type="button" value="Restar" subtract /> &nbsp;
+  <input type="button" value="Multiplicar" multiply /> &nbsp;
+  <input type="button" value="Dividir" divide /> &nbsp;
+  <br /><br />
+  <input type="text" id="txtResult" />
+</div>
+  <script>
+      var App = { 'Operations': {}, 'Inputs': {}, 'Outputs': {}, 'Commands': {}, 'Events': {} };
+
+      App.Events = {
+
+          'Add': function () {
+              App.Outputs.Result.value = App.Operations.Calculate(
+                        parseFloat(App.Inputs.Number1.value)
+                      , parseFloat(App.Inputs.Number2.value), 'Add');
+          },
+
+          'Subtract': function () {
+              App.Outputs.Result.value = App.Operations.Calculate(
+                        parseFloat(App.Inputs.Number1.value)
+                      , parseFloat(App.Inputs.Number2.value), 'Subtract');
+          },
+
+          'Multiply': function () {
+              App.Outputs.Result.value = App.Operations.Calculate(
+                        parseFloat(App.Inputs.Number1.value)
+                      , parseFloat(App.Inputs.Number2.value), 'Multiply');
+          },
+
+          'Divide': function () {
+              App.Outputs.Result.value = App.Operations.Calculate(
+                        parseFloat(App.Inputs.Number1.value)
+                      , parseFloat(App.Inputs.Number2.value), 'Divide');
+          },
+
+          'Load': function () {
+
+              App.Inputs = {
+                  'Number1': document.getElementById('txtNumber1'),
+                  'Number2': document.getElementById('txtNumber2'),
+              };
+
+              App.Outputs = {
+                  'Result': document.getElementById('txtResult')
+              };
+
+              App.Commands = {
+                  'Add': document.querySelector('[add]'),
+                  'Subtract': document.querySelector('[subtract]'),
+                  'Multiply': document.querySelector('[multiply]'),
+                  'Divide': document.querySelector('[divide]')
+              };
+              
+              App.Commands.Add.addEventListener('click', App.Events.Add);
+              App.Commands.Subtract.addEventListener('click', App.Events.Subtract);
+              App.Commands.Multiply.addEventListener('click', App.Events.Multiply);
+              App.Commands.Divide.addEventListener('click', App.Events.Divide);
+          }
+      };
+      App.Operations.Calculate = function (number1, number2, operationType) {
+          var result = 0;
+          switch (operationType.toLowerCase()) {
+              case 'add':
+                  result = number1 + number2;
+                  break;
+              case 'subtract':
+                  result = number1 - number2;
+                  break;
+              case 'multiply':
+                  result = number1 * number2;
+                  break;
+              case 'divide':
+                  result = number1 / number2;
+                  break;
+          }
+          return result;
+      };
+      document.addEventListener('DOMContentLoaded', App.Events.Load);
+  </script>
+</body>
+</body>
+</html>
