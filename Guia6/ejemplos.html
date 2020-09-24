@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pruebas</title>
+</head>
+<body>
+    <script>var lenguajes = [4];
+        lenguajes[0] = "JavaScript";
+        lenguajes[1] = "Visual Basic";
+        lenguajes[2] = "PHP";
+        lenguajes[3] = "C/C++";
+        document.writeln("Aprenderás a usar los siguientes lenguajes:<br> ");
+        document.writeln("<OL type='1'>");
+        document.writeln("<LI>" + lenguajes[0]);
+        document.writeln("<LI>" + lenguajes[1]);
+        document.writeln("<LI>" + lenguajes[2]);
+        document.writeln("<LI>" + lenguajes[3]);
+        document.writeln("</OL>");
+        lenguajes[4] = "Java";
+        lenguajes[5] = "ASP";
+        document.writeln("Además usarás:<br> ");
+        document.writeln("<OL type='1' start='5'>");
+        document.writeln("<LI>" + lenguajes[4]);
+        document.writeln("<LI>" + lenguajes[5]);
+        document.writeln("</OL>");
+        var lugares = ["primero", "segundo", "tercer", "cuarto"];
+var primerlugar = lugares.shift(); //El primer elemento es eliminado del arreglo
+//y asignado a la variable primerlugar
+
+alert(lugares.toSource());
+        </script>
+        
+</body>
+</html>
