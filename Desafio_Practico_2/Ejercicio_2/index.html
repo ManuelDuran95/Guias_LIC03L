@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Ejercicio_2_Desafio_2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link type="text/css" href="CSS/estilos.css" rel="stylesheet">
+
+</head>
+
+<body onload="init();">
+  <div class="container p-3 my-3 bg-primary text-white text-center">
+    <h2>Restaurante Don Pollon</h2>
+    <p>Seleccione un combo:</p>
+    <input type="radio" id="combo1" value="combo1" checked>
+    <label for="combo1">Super combo</label>
+    <input type="radio" id="combo2" value="combo2">
+    <label for="combo2">Combo personal</label>
+    <input type="radio" id="combo3" value="combo3">
+    <label for="combo3">Combo infantil</label>
+    <div>
+      <p>Productos:</p>
+      
+        <div class="form-check">
+          <label class="form-check-label" for="produc1">
+            <input type="checkbox" class="form-check-input" id="produc1" name="ensalada" value="ensalada" >Ensalada
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for="produc2">
+            <input type="checkbox" class="form-check-input" id="produc2" name="papasfritas" value="papasfritas">Papas Fritas
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for="produc3">
+            <input type="checkbox" class="form-check-input" id="produc3" name="pgrande" value="pgrande">Pieza grande de pollo
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for="produc4">
+            <input type="checkbox" class="form-check-input" id="produc4" name="pmedia" value="pmedia">Pieza mediana de pollo
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for="produc5">
+            <input type="checkbox" class="form-check-input" id="produc5" name="ppeque" value="ppeque">Pieza pequeña de pollo
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for="produc6">
+            <input type="checkbox" class="form-check-input" id="produc6" name="bgrande" value="bgrande">Bebida grande
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for="produc7">
+            <input type="checkbox" class="form-check-input" id="produc7" name="bmedia" value="bmedia">Bebida mediana
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for="produc8">
+            <input type="checkbox" class="form-check-input" id="produc8" name="bpeque" value="bpeque">Bebida pqueña
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for="produc9">
+            <input type="checkbox" class="form-check-input" id="produc9" name="cafe" value="cafe">Cafe
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for="produc10">
+            <input type="checkbox" class="form-check-input" id="produc10" name="postre" value="postre">Postre
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="comment">Sugerencias:</label>
+          <textarea class="form-control" rows="5" id="suge" name="text"></textarea>
+        </div>
+        <div class="form-group col-sm-3"><h3>Total a pagar:</h3>
+      <input type="text" class="form-control form-control-sm-3" placeholder="Total" name="resul" size="10" id="Total">
+    </div>
+        <button type="button" class="btn btn-danger" id="enviar">enviar</button>
+    </div>
+    <div class="col-sm-3" id="info"></div>
+  </div>
+</form>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

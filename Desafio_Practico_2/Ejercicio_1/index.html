@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ejercicio 1_Desafio_2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link type="text/css" href="CSS/estilos.css" rel="stylesheet">
+ 
+</head>
+<body onload="init();">
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6">
+      <h1>Ordenar numeros</h1><br>
+      <h3>Ingresar numeros</h3>
+    <input type="number"   onfocus="if (this.value=='Numero') this.value='';" size="25" id="txtNum"><br>
+    <p id="error1" class="errornum"></p><br>
+    <button type="button" id="btnAgregar" class="btn btn-success">Agregar</button>
+    <button type="button" id="btnMostrar" class="btn btn-success" onClick="mostrar1()">Mostrar</button>
+    <div class="col-lg-6" id="info"></div>
+  </div><br>
+    
+  </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
