@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Gráficos de barras con JavaScript</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/graph.css" />
+    <link rel="stylesheet" href="css/formgraph.css" />
+    <script src="js/graph.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Gráfico de barras</h1>
+    </header>
+    <section>
+        <article>
+            <form action="javascript:void(0)">
+                <fieldset class="group">
+                    <legend><span class="labelgroup">Ingrese valores para generar la grafica:</span></legend>
+                    <input type="radio" name="type" id="browser" value="browser" checked="checked" />
+                    <label for="browser">Uso de navegadores</label><br />
+                    <input type="radio" name="type" id="platform" value="platform" />
+                    <label for="platform">Uso de Sistemas Operativos</label>
+                    <input type="number" id="t1" required min="0">
+                    <input type="button" id="dato" value="Agregar datos" onclick="add_element()">
+                    <p id="disp"></p>
+                </fieldset>
+                <fieldset class="group">
+                    <legend>Generar:</legend>
+                   <input type="button" id="enviar1">
+                </fieldset>
+                <fieldset class="group">
+                    <legend>Elija una dirección:</legend>
+                    <input type="radio" name="direction" id="horizontal" value="horizontal" checked="checked" />
+                    <label for="horizontal">Horizontal</label>
+                    <input type="radio" name="direction" id="vertical" value="vertical" />
+                    <label for="vertical">Vertical</label>
+                </fieldset>
+            </form>
+        </article>
+        <article id="chartArea"></article>
+    </section>
+</body>
+
+</html>
