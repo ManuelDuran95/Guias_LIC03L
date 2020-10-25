@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_1_Guia8</title>
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script src="js/ejer1.js"></script>
+</head>
+
+<body>
+    <section id="slick">
+        <!-- Área de formulario -->
+        <div class="contact-form">
+            <!-- Título -->
+            <div class="title">Elevar un numero a una potencia</div>
+            <!-- Texto indicativo -->
+            <p class="intro">Ingrese los siguientes datos</p>
+            <!-- Formulario -->
+            <div class="w-100">
+                <!-- Campos de formulario -->
+                <form name="frmrectangulo" id="frmrectangulo" action="javascript:void(0);">
+                    <!-- Campo para la base -->
+                    <div class="field">
+                        <input type="number" name="base" id="txtbase" min="0" max="1000" step=".1" placeholder="(Base)"
+                            required />
+                        <span class="entypo-base icon"></span>
+                        <span class="slick-tip left">Ingrese la base:</span>
+                    </div>
+                    <!-- Campo para la altura -->
+                    <div class="field">
+                        <input type="number" name="potencia" id="txtpoten" min="0" max="100" step="1"
+                            placeholder="(Potencia a elevar)" required />
+                        <span class="entypo-altura icon"></span>
+                        <span class="slick-tip left">Ingrese la potencia:</span>
+                    </div>
+                    <p id="demo"></p>
+                    <!-- Botones para hacer los cálculos -->
+                    
+                    
+                    
+                </form>
+                <button class="btn btn-danger send" onclick="potencia()">Calcular</button>
+                <!-- Fin de campos de formulario -->
+            </div>
+        </div>
+        <center>
+        
+    </center>
+
+        <!-- Final del área del formulario -->
+    </section>
+</body>
+
+</html>
