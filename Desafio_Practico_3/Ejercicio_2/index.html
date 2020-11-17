@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Ejercicio 1_Desafio_3</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link type="text/css" href="CSS/estilos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <div class="container">
+    <form class="was-validated">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>Ingrese los datos de las 3 sucursales</h2>
+      </div>
+      
+    <div class="col-lg-3">
+      <h3>sucursal 1:</h3>
+      
+    
+      <div class="form-group">
+       
+        <input type="text" class="form-control" id="NS1" placeholder="Nombre sucursal " name="uname" required>
+        <div class="valid-feedback"></div>
+        <div class="invalid-feedback">Ingrese el nombre de la sucursal</div>
+      </div>
+      <div class="form-group">
+       
+        <input type="number" class="form-control" id="GS1" placeholder="Ganacia sucursal" name="uname" required min="1000" max="50000">
+        <div class="valid-feedback"></div>
+        <div class="invalid-feedback">Ingrese un numero entre 1,000 y 50,000</div>
+      </div>
+      <div class="form-group">
+       
+        <input type="number" class="form-control" id="ES1" placeholder="Numero de empleados" name="uname" required min="10">
+        <div class="valid-feedback"></div>
+        <div class="invalid-feedback">Ingrese un numero mayor a 10</div>
+      </div>
+     
+  
+    </div>
+    <div class="col-lg-3">
+      <h3>sucursal 2:</h3>
+      
+    
+      <div class="form-group">
+       
+        <input type="text" class="form-control" id="NS2" placeholder="Nombre sucursal " name="uname" required>
+        <div class="valid-feedback"></div>
+        <div class="invalid-feedback">Ingrese el nombre de la sucursal</div>
+      </div>
+      <div class="form-group">
+       
+        <input type="number" class="form-control" id="GS1" placeholder="Ganacia sucursal" name="uname" required min="1000" max="50000">
+        <div class="valid-feedback"></div>
+        <div class="invalid-feedback">Ingrese un numero entre 1,000 y 50,000</div>
+      </div>
+      <div class="form-group">
+       
+        <input type="number" class="form-control" id="ES2" placeholder="Numero de empleados" name="uname" required min="10">
+        <div class="valid-feedback"></div>
+        <div class="invalid-feedback">Ingrese un numero mayor a 10</div>
+      </div>
+     
+  
+    </div>
+    <div class="col-lg-3">
+      <h3>sucursal 3:</h3>
+      
+    
+      <div class="form-group">
+       
+        <input type="text" class="form-control" id="NS3" placeholder="Nombre sucursal " name="uname" required>
+        <div class="valid-feedback"></div>
+        <div class="invalid-feedback">Ingrese el nombre de la sucursal</div>
+      </div>
+      <div class="form-group">
+       
+        <input type="number" class="form-control" id="GS1" placeholder="Ganacia sucursal" name="uname" required min="1000" max="50000">
+        <div class="valid-feedback"></div>
+        <div class="invalid-feedback">Ingrese un numero entre 1,000 y 50,000</div>
+      </div>
+      <div class="form-group">
+       
+        <input type="number" class="form-control" id="ES3" placeholder="Numero de empleados" name="uname" required min="10">
+        <div class="valid-feedback"></div>
+        <div class="invalid-feedback">Ingrese un numero mayor a 10</div>
+      </div>
+     
+  
+    </div>
+    
+  
+      </div>
+      <button type="button" id="btnMostrar" class="btn btn-success" onClick="mostrar1()">Registrar Ganacias</button>
+      <button type="button" id="btnMostrar" class="btn btn-danger" onClick="recarg()">Borrar Todo</button>
+    </form>
+    </div>
+    <div class="container">
+    <p id="txtN" class="p-2 bg-primary text-white"></p>
+    <p id="txtN2" class="p-2 bg-primary text-white"></p>
+    <p id="txtN3" class="p-2 bg-primary text-white"></p>
+    <div class="col-lg-12" id="info"></div>
+  </div>
+  
+    <script src="js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -19,28 +19,20 @@
             <form action="javascript:void(0)">
                 <fieldset class="group">
                     <legend><span class="labelgroup">Ingrese valores para generar la grafica:</span></legend>
-                    <input type="radio" name="type" id="browser" value="browser" checked="checked" />
-                    <label for="browser">Uso de navegadores</label><br />
-                    <input type="radio" name="type" id="platform" value="platform" />
-                    <label for="platform">Uso de Sistemas Operativos</label>
+                    
                     <input type="number" id="t1" required min="0">
                     <input type="button" id="dato" value="Agregar datos" onclick="add_element()">
                     <p id="disp"></p>
                 </fieldset>
                 <fieldset class="group">
-                    <legend>Generar:</legend>
-                   <input type="button" id="enviar1">
+                    <legend>Generar Grafico Con los datos igresados:</legend>
+                   <input type="button" id="enviar1" onclick="chgChart()" value="Generar">
+                   <input type="button" id="enviar1" onclick="borrar()" value="Borrar Datos">
                 </fieldset>
-                <fieldset class="group">
-                    <legend>Elija una dirección:</legend>
-                    <input type="radio" name="direction" id="horizontal" value="horizontal" checked="checked" />
-                    <label for="horizontal">Horizontal</label>
-                    <input type="radio" name="direction" id="vertical" value="vertical" />
-                    <label for="vertical">Vertical</label>
-                </fieldset>
+                
             </form>
         </article>
-        <article id="chartArea"></article>
+        <article id="chartArea" class="se"></article>
     </section>
 </body>
 
